@@ -13,7 +13,7 @@ let userConfirmPassword = 'alex22'
 * check if the userPassword length bigger than 5 chr.
 * check if the userConfirmPassword equal to userPassword.
 
-If Not valid ==> output  ==> print 'Validation error message'.
+>If Not valid ==> output  ==> print 'Validation error message'.
 
-If success ==> output  ==> print 'The user data are valid'.
+>If success ==> output  ==> print 'The user data are valid'.
 
