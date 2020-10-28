@@ -1,16 +1,26 @@
 let log = console.log;
 
-let userName = 'Alex'
-let userEmail = 'a.gmail.com'
-let userPassword = 'Alex22'
-let userConfirmPassword = 'alex22'
+let userName = "Alex";
+let userEmail = "a.gmail.com";
+let userPassword = "Alex22";
+let userConfirmPassword = "alex22";
 
 // Check if the userName length bigger than 3 chr
-userName.length > 3 ? log('is userName bigger than 3 char?', true) : log('is userName bigger than 3 char?', false);
+userName.length > 3
+  ? log("The user data are valid")
+  : log("Validation error message");
 
 // Check if the userEmail length bigger than 12 chr and includes @
-(userEmail.length > 12 && userEmail.includes('@')) ? log('longer than 12 and includes @?', true) : log('longer than 12 and includes @?', false);
+userEmail.length > 12 && userEmail.includes("@")
+  ? log("The user data are valid")
+  : log("Validation error message");
 
 // Check if the userPassword length bigger than 5 chr
-log('is bigger than 5?', userPassword.length > 5);
-log('did user confirm the same password?', userPassword === userConfirmPassword);
+userPassword.length > 5
+  ? log("The user data is valid")
+  : log("Validation error message");
+
+// Check if the userConfirmPassword equal to userPassword
+userPassword === userConfirmPassword
+  ? log("The user data are valid")
+  : log("Validation error message");
